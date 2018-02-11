@@ -8,7 +8,7 @@ import android.os.Bundle;
 public class CrimeActivity extends SingleFragmentActivity {
 
     @Override
-    protected Fragment creatFragment() {
+    protected Fragment createFragment() {
         return new CrimeFragment();
     }
 }
