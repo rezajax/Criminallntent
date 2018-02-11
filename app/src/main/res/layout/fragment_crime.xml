@@ -11,6 +11,7 @@
         style="?android:listSeparatorTextViewStyle"/>
 
     <EditText
+        ali
         android:id="@+id/crime_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
