@@ -42,7 +42,7 @@ public class CrimeFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                mCrime.setmTitle(charSequence.toString());
+                mCrime.setTitle(charSequence.toString());
             }
 
             @Override
@@ -52,7 +52,7 @@ public class CrimeFragment extends Fragment {
         });
 
         mDateButton = (Button)v.findViewById(R.id.crime_date);
-        mDateButton.setText(mCrime.getmDate().toString());
+        mDateButton.setText(mCrime.getDate().toString());
         mDateButton.setEnabled(false);
 
 

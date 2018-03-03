@@ -17,12 +17,12 @@ public class CrimeLab {
         return sCrimeLab;
     }
 
-    private CrimeLab(Context context) {
+    private CrimeLab(Context context) { //creator method
         mCrimes = new ArrayList<>();
         for (int i = 0 ;i < 100 ; i++) {
             Crime crime = new Crime();
-            crime.setmTitle("Crime #: + i");
-            crime.setmSolved(i % 2 == 0);
+            crime.setTitle("Crime #: + i");
+            crime.setSolved(i % 2 == 0);
             mCrimes.add(crime);
         }
     }
@@ -32,7 +32,10 @@ public class CrimeLab {
     }
 
     public Crime getCrime(UUID id) {
-        for (Crime crime : mCrimes) {
+        for (Crime crime : mCrimes) { //for (int i; i < mCrimes.size() ; i++ )
+            if (crime.getID().equals(id)) { //crime.getID() == id
+                return crime;
+            }
             return crime;
         }
         return null;
